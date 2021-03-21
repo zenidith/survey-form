@@ -3,11 +3,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+    font-family: 'Poppins', sans-serif;}
 
 body::before { content: "";
-    position: absolute;
-    background-color: cornflowerblue;
+    position: fixed;
+    background-color: rgb(166, 174, 234);
     width: 100%;
     height: 100%;
     top: 0;
@@ -20,10 +20,12 @@ body::before { content: "";
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(201, 197, 197);
     padding: 5rem;
     z-index: 999;
     position: relative;
+    opacity: 0.8;
+    border-radius: 15px;
 }
 
 .header {
