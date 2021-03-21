@@ -12,35 +12,35 @@
 
 <body>
     <div class="header">
-    <h1>freeCodeCamp Survey Form
+    <h1 id="title">freeCodeCamp Survey Form
     </h1>
-    <p><em>Thank you for taking the time to help us improve the platform</em>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em>
     </p>
     </div>
 
-    <form action="action_page.php">
+    <form action="action_page.php" id="survey-form">
 
         <div class="container">
 
           <div class="input-field">
-            <label for="fullname"><b>Name</b></label>
+            <label for="name" id="name-label"><b>Name</b></label>
             <input type="text" placeholder="Enter your name" name="name" id="name" required>
           </div>
 
           <div class="input-field">
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter your Email" name="email" id="email" required>
+            <label for="email" id="email-label"><b>Email</b></label>
+            <input type="email" placeholder="Enter your Email" name="email" id="email" required>
           </div>
           <br>
 
           <div class="input-field">
-            <label for="age"><b>Age (optional)</b></label>
-            <input type="number" placeholder="Age" min="10" name="email" id="age">
+            <label for="number" id="number-label"><b>Age (optional)</b></label>
+            <input type="number" placeholder="Age" min="10" max="101" name="number" id="number">
           </div>
 
           <div class="input-field">
-            <label for="role"><b>Which option best describes your current role?</b></label>
-            <select>
+            <label for="dropdown"><b>Which option best describes your current role?</b></label>
+            <select id="dropdown">
               <option value="Select current role:">Select current role:</option>
               <option value="Student">Student</option>
               <option value="Full Time">Full Time</option>
@@ -93,13 +93,13 @@
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
             <br>
           </div>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" id="submit">
         </div>
       
       </form>
               
     </div>
     <!-- this it to test whether the project passes tests. -->
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> --> -->
 </body>
 </html>
