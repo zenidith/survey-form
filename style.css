@@ -34,3 +34,18 @@ body::before { content: "";
     position: relative;
     z-index: 999;
 }
+
+.input-field * {
+    display: block;
+}
+
+.option-buttons * {
+    display: inline-block;
+}
+
+input[type=text], input[type=number], select, textarea {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
